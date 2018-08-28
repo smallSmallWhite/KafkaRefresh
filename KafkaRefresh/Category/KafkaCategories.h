@@ -80,5 +80,6 @@
 
 - (void)setAnimateBlock:(dispatch_block_t)block;
 - (void)setAnimateBlock:(dispatch_block_t)block completion:(dispatch_block_t)completion;
+- (void)setAnimateBlock:(dispatch_block_t)block duration:(NSTimeInterval)duration options:(UIViewAnimationOptions)options completion:(dispatch_block_t)completion;
 
 @end
