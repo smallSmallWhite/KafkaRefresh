@@ -285,13 +285,18 @@
 }
 
 - (void)setAnimateBlock:(dispatch_block_t)block completion:(dispatch_block_t)completion{
-	[UIView animateWithDuration:0.15
-						  delay:0
-						options:UIViewAnimationOptionCurveLinear
-					 animations:block
-					 completion:^(BOOL finished) {
-						 if (completion) completion();
-					 }];
+    [self setAnimateBlock:block duration:0.15 options:UIViewAnimationOptionCurveLinear completion:completion];
+}
+
+- (void)setAnimateBlock:(dispatch_block_t)block duration:(NSTimeInterval)duration options:(UIViewAnimationOptions)options completion:(dispatch_block_t)completion
+{
+    [UIView animateWithDuration:duration
+                          delay:0
+                        options:options
+                     animations:block
+                     completion:^(BOOL finished) {
+                         if (completion) completion();
+                     }];
 }
 
 @end

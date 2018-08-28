@@ -120,6 +120,16 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface KafkaRefreshControl: UIView <KafkaRefresh
 @property (nonatomic, assign) BOOL autoRefreshOnFoot;
 
 /**
+  End refreshing animation duration
+ */
+@property (nonatomic, assign) NSTimeInterval endRefreshAnimationDuration;
+
+/**
+ End refreshing animation background color
+ */
+@property (nonatomic, strong) UIColor *endRefreshAnimationBackgroundColor;
+
+/**
  Set the color of the prompt text after the refresh is completed.
 
  @param alertTextColor color

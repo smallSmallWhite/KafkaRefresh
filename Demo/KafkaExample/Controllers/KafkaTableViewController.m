@@ -67,6 +67,8 @@
     };
     
     [self.tableView bindHeadRefreshHandler:headBlock themeColor:[UIColor redColor] refreshStyle:_style];
+    self.tableView.headRefreshControl.endRefreshAnimationDuration = 0.25;
+    self.tableView.headRefreshControl.endRefreshAnimationBackgroundColor = [UIColor blackColor];
     
     KafkaRefreshHandler footBlock = ^(void){
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

@@ -12,6 +12,7 @@
 #import "KafkaCategories.h"
 
 @interface KafkaLabel : UILabel<CAAnimationDelegate>
+@property (nonatomic, strong) UIColor *animationBackgroundColor;
 - (void)startAnimating;
 @end
 
@@ -42,9 +43,9 @@
 	[UIView animateWithDuration:0.3 animations:^{
 		weakSelf.alpha = 1.0;
 	}];
-	new.colors = @[(id)[self.textColor colorWithAlphaComponent:0.2].CGColor,
-				   (id)[self.textColor colorWithAlphaComponent:0.1].CGColor,
-				   (id)[self.textColor colorWithAlphaComponent:0.2].CGColor];
+	new.colors = @[(id)[self.animationBackgroundColor colorWithAlphaComponent:0.2].CGColor,
+				   (id)[self.animationBackgroundColor colorWithAlphaComponent:0.1].CGColor,
+				   (id)[self.animationBackgroundColor colorWithAlphaComponent:0.2].CGColor];
 	
 	CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"bounds.size.width"];
 	animation.fromValue = @(0);
@@ -113,12 +114,25 @@ static CGFloat const kStretchOffsetYAxisThreshold = 1.0;
 - (void)setThemeColor:(UIColor *)themeColor{
 	if (_themeColor != themeColor) {
 		_themeColor = themeColor;
-		_alertLabel.textColor = themeColor;
+        if (_alertLabel.animationBackgroundColor == nil) {
+            _alertLabel.animationBackgroundColor = themeColor;
+        }
 	}
 }
 
 - (void)setAlertTextColor:(UIColor *)alertTextColor{
 	_alertLabel.textColor = alertTextColor;
+    if (_alertLabel.animationBackgroundColor == nil) {
+        _alertLabel.animationBackgroundColor = alertTextColor;
+    }
+}
+
+- (void)setEndRefreshAnimationBackgroundColor:(UIColor *)endRefreshAnimationBackgroundColor
+{
+    if (_endRefreshAnimationBackgroundColor != endRefreshAnimationBackgroundColor) {
+        _endRefreshAnimationBackgroundColor = endRefreshAnimationBackgroundColor;
+        _alertLabel.animationBackgroundColor = endRefreshAnimationBackgroundColor;
+    }
 }
 
 - (void)setRefreshState:(KafkaRefreshState)refreshState{

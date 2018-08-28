@@ -85,7 +85,7 @@ static inline CGPoint RefreshingPoint(KafkaHeadRefreshControl *cSelf){
 		self.triggeredRefreshByUser = NO;
 		self.refreshState = KafkaRefreshStateNone;
     };
-	[self setAnimateBlock:animation completion:completion];
+    [self setAnimateBlock:animation duration:self.endRefreshAnimationDuration options:UIViewAnimationOptionCurveEaseInOut completion:completion];
 }
 
 #pragma mark - contentOffset
