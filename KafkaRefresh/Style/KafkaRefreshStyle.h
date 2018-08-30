@@ -23,7 +23,8 @@ typedef NS_ENUM(NSInteger,KafkaRefreshStyle) {
 	
 	//Ring
 	KafkaRefreshStyleAnimatableRing, 
-	KafkaRefreshStyleAnimatableArrow
+	KafkaRefreshStyleAnimatableArrow,
+    KafkaRefreshStyleAnimatableProgressiveRing,
 };
 
 

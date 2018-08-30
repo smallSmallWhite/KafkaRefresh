@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071ADB6C21364FCD002388D8 /* KafkaProgressiveRingIndicatorHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 071ADB6B21364FCD002388D8 /* KafkaProgressiveRingIndicatorHeader.m */; };
+		07C1A87321378E3B004F5508 /* KafkaProgressiveRingIndicatorFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C1A87221378E3B004F5508 /* KafkaProgressiveRingIndicatorFooter.m */; };
 		983A0915201AB89900AEF743 /* UIScrollView+KafkaConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 983A08E5201AB89900AEF743 /* UIScrollView+KafkaConfiguration.m */; };
 		983A0916201AB89900AEF743 /* KafkaFootRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 983A08E8201AB89900AEF743 /* KafkaFootRefreshControl.m */; };
 		983A0917201AB89900AEF743 /* KafkaHeadRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 983A08EA201AB89900AEF743 /* KafkaHeadRefreshControl.m */; };
@@ -56,6 +58,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071ADB6A21364FCD002388D8 /* KafkaProgressiveRingIndicatorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KafkaProgressiveRingIndicatorHeader.h; sourceTree = "<group>"; };
+		071ADB6B21364FCD002388D8 /* KafkaProgressiveRingIndicatorHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KafkaProgressiveRingIndicatorHeader.m; sourceTree = "<group>"; };
+		07C1A87121378E3B004F5508 /* KafkaProgressiveRingIndicatorFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KafkaProgressiveRingIndicatorFooter.h; sourceTree = "<group>"; };
+		07C1A87221378E3B004F5508 /* KafkaProgressiveRingIndicatorFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KafkaProgressiveRingIndicatorFooter.m; sourceTree = "<group>"; };
 		983A08E4201AB89900AEF743 /* UIScrollView+KafkaConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+KafkaConfiguration.h"; sourceTree = "<group>"; };
 		983A08E5201AB89900AEF743 /* UIScrollView+KafkaConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+KafkaConfiguration.m"; sourceTree = "<group>"; };
 		983A08E7201AB89900AEF743 /* KafkaFootRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaFootRefreshControl.h; sourceTree = "<group>"; };
@@ -241,6 +247,8 @@
 				983A08FF201AB89900AEF743 /* KafkaReplicatorFooter.m */,
 				983A0900201AB89900AEF743 /* KafkaRingIndicatorFooter.h */,
 				983A0901201AB89900AEF743 /* KafkaRingIndicatorFooter.m */,
+				07C1A87121378E3B004F5508 /* KafkaProgressiveRingIndicatorFooter.h */,
+				07C1A87221378E3B004F5508 /* KafkaProgressiveRingIndicatorFooter.m */,
 			);
 			path = FootKit;
 			sourceTree = "<group>";
@@ -256,6 +264,8 @@
 				983A0908201AB89900AEF743 /* KafkaReplicatorHeader.m */,
 				983A0909201AB89900AEF743 /* KafkaRingIndicatorHeader.h */,
 				983A090A201AB89900AEF743 /* KafkaRingIndicatorHeader.m */,
+				071ADB6A21364FCD002388D8 /* KafkaProgressiveRingIndicatorHeader.h */,
+				071ADB6B21364FCD002388D8 /* KafkaProgressiveRingIndicatorHeader.m */,
 			);
 			path = HeadKit;
 			sourceTree = "<group>";
@@ -489,6 +499,7 @@
 				983A0919201AB89900AEF743 /* UIScrollView+KafkaRefreshControl.m in Sources */,
 				983A0921201AB89900AEF743 /* KafkaNativeHeader.m in Sources */,
 				983A0917201AB89900AEF743 /* KafkaHeadRefreshControl.m in Sources */,
+				071ADB6C21364FCD002388D8 /* KafkaProgressiveRingIndicatorHeader.m in Sources */,
 				983A0916201AB89900AEF743 /* KafkaFootRefreshControl.m in Sources */,
 				B946B97320E67F4C00481872 /* KafkaCategories.m in Sources */,
 				983A0915201AB89900AEF743 /* UIScrollView+KafkaConfiguration.m in Sources */,
@@ -500,6 +511,7 @@
 				983A091D201AB89900AEF743 /* KafkaNativeFooter.m in Sources */,
 				983A091F201AB89900AEF743 /* KafkaRingIndicatorFooter.m in Sources */,
 				98C2F86A1FEF6AB50039C749 /* KafkaAppDelegate.m in Sources */,
+				07C1A87321378E3B004F5508 /* KafkaProgressiveRingIndicatorFooter.m in Sources */,
 				983A0922201AB89900AEF743 /* KafkaReplicatorHeader.m in Sources */,
 				983A091E201AB89900AEF743 /* KafkaReplicatorFooter.m in Sources */,
 				986ADD9E1FF60DDC006575E7 /* KafkaCollectionViewController.m in Sources */,
